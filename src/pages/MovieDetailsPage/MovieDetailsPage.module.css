@@ -1,0 +1,98 @@
+h1 {
+  margin-bottom: 15px;
+}
+
+img {
+  max-width: 300px;
+  border-radius: 5px;
+}
+
+nav {
+  margin: 20px 0;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* src/pages/MovieDetailsPage.module.css */
+.movieInfo {
+  display: flex;
+  align-items: flex-start;
+}
+
+.poster {
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.details {
+  max-width: 600px;
+}
+
+.nav {
+  margin-top: 20px;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.movieInfo {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.poster {
+  width: 200px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.details {
+  max-width: 600px;
+}
+
+.details h1 {
+  margin: 0 0 10px;
+}
+
+.details p {
+  margin: 5px 0;
+}
+
+.nav {
+  margin-top: 20px;
+}
+
+.nav a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.link {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 16px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
