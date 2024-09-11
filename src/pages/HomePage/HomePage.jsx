@@ -1,4 +1,3 @@
-// src/pages/HomePage.jsx
 import { useEffect, useState } from "react";
 import MovieList from "../../components/MovieList/MovieList";
 import { fetchTrendingMovies } from "../../services/apiService";

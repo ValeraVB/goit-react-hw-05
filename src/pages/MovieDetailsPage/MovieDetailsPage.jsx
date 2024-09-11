@@ -1,5 +1,4 @@
-// src/pages/MovieDetailsPage.jsx
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useParams, Link, Outlet, useLocation } from "react-router-dom";
 import { fetchMovieDetails } from "../../services/apiService";
 import MovieCast from "../../components/MovieCast/MovieCast";
@@ -13,7 +12,7 @@ const MovieDetailsPage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const backLinkHref = location.state?.from ?? "/movies";
+  const backLinkHrefRef = useRef(location.state?.from ?? "/movies");
 
   useEffect(() => {
     const getMovieDetails = async () => {
@@ -34,7 +33,7 @@ const MovieDetailsPage = () => {
 
   return (
     <div>
-      <Link to={backLinkHref}>Go back</Link>
+      <Link to={backLinkHrefRef.current}>Go back</Link>
       {movie && (
         <>
           <div className={styles.movieInfo}>

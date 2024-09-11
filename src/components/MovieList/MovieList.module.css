@@ -10,14 +10,24 @@ ul {
 li {
   flex: 1 1 200px;
   margin: 0;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
 }
 
 img {
-  max-width: 100%;
-  border-radius: 5px;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #ddd;
 }
 
 p {
   text-align: center;
-  margin-top: 5px;
+  margin: 10px;
+  color: #646cff;
+}
+
+li:hover {
+  transform: scale(1.03);
 }
